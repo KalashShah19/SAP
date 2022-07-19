@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        var path = window.location.pathname;
-        var page = path.split("/").pop();
-        
-    </script>
+  <script>
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    
+</script>
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -14,7 +14,7 @@
   <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="author" content="Kalash" />
 
   <title> Shah Abhay PhotoGraphy </title>
 
@@ -58,7 +58,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="userhome.html"> Dash Board <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a class="nav-link" href="booking.html"> Shoot Booking <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -67,7 +67,7 @@
                     <li class="nav-item ">
                       <a class="nav-link" href="covers.html"> Album Covers <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="preview.html"> Album Preview </a>
                     </li>
                     <li class="nav-item">
@@ -94,6 +94,79 @@
     </header>
     <!-- end header section -->
 
+    <section class="contact_section">
+      <div class="bg-img1">
+        <img src="images/bg-img-1.png" alt="">
+      </div>
+      <div class="bg-img2">
+        <img src="images/bg-img-2.png" alt="">
+      </div>
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Book Your Shoot Here
+          </h2>
+        </div>
+        <div class="book">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <form action="" method="post">
+                <div class="contact_form-container">
+                  <div> 
+                    <label for="event"> Event Type </label>
+                    <select id="event"> 
+                      <option> Select </option>
+                      <option value="prewedding"> Pre Wedding </option>
+                      <option value="wedding"> Wedding </option>
+                      <option value="birthday"> Birthday </option>
+                      <option value="inogration"> Inogration/Opening </option>
+                      <option value="anniversary"> Anniversary </option>
+                      <option value="vastu"> Vastu Poojan </option>
+                      <option value="party"> Party </option>
+                      <option value="competetions"> Competetions </option>
+                      <option value="school"> School Function </option>
+                      <option value="corperate"> Corperate </option>
+                      <option value="portfolio"> Portfolio Shoot </option>
+                      <option value="festival"> Festival Shoot </option>
+                      <option value="musical"> Music / Concert / Opera  </option>
+                      <option value="sports"> Sports Tournaments </option>
+                      <option value="graduation"> College Graduation </option>
+                      <option value="funeral"> Funeral </option>
+                      <option value="festival"> Festival Shoot </option>
+                      <option value="award"> Award Ceremony </option>
+                      <option value="political"> Political  </option>
+                      <option value="personalized"> Personalized Events </option>
+                    </select>
+                    <br> <br>
+                    
+                    <label for="personalized event"> Personalized Event Name </label>
+                    <input type="text" name="personalized event" id="personalized event"  class="book"> 
+
+                    <br> <br>
+                    <label for="start"> Start Date </label>
+                    <input type="date" name="start" id="start">  
+                    
+                    <br> <br>
+                    <label for="end"> End Date </label>
+                    <input type="date" name="end" id="end">
+                    <br>
+                    <label for="personalized event"> Special Instructions </label>
+                  </div>
+                    <input type="text" name="personalized event" id="personalized event"  class="book"> <br> <br>
+                    <p style="font-size: small; background-color: white;"> *There are Booking Charges of 100/- for Confirmation of your Booking. </p>
+                    <div class=" d-flex justify-content-center ">
+                      <button type="submit">
+                        Proceed To Pay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
 
   <!-- info section -->
@@ -116,7 +189,6 @@
               <a href="https://www.facebook.com/abhayshahnvs" target="_blank">
                 <img src="images/fb.png" alt="FaceBook">
               </a>
-
             </div>
         </div>
       </div>
@@ -134,7 +206,6 @@
     </div>
   </section>
   <!-- footer section -->
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
