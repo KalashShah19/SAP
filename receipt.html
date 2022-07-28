@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        var path = window.location.pathname;
-        var page = path.split("/").pop();
-        
-    </script>
+  <script>
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    
+</script>
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -16,11 +16,11 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title> Shah Abhay PhotoGraphy </title>
+  <title> Shah Abhay PhotoGraphy | Login </title>
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="sub_page">
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -46,7 +46,7 @@
                   Abhay Shah
                 </span>
               </a>
-            </a>
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -80,10 +80,8 @@
                       <a class="nav-link" href="index.html"> Log Out </a>
                     </li>
                   </ul>
-                  <form class="form-inline">
-                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                  </form>
                 </div>
+
 
               </div>
             </nav>
@@ -91,59 +89,69 @@
         </div>
       </div>
     </header>
+  </div>
     <!-- end header section -->
 
-    <section class="portfolio_section layout_padding">
-      <div class="container">
-        <div class="heading_container">
-          <h2>
-            Album Covers
-          </h2>
-          <p>
-            Choose Exactly how will Your Album Looks Like.
-          </p>
-        </div>
-      <div class="info_container">
-        <div class="covslidershow covmiddle">
-          <div class="covslides">
-            <input type="radio" name="r" id="r1">
-            <input type="radio" name="r" id="r2">
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-            <input type="radio" name="r" id="r5">
-            <div class="covslide s1">
-              <img src="images/cover1.jpg" alt="First">
-            </div>
-            <div class="covslide">
-              <img src="images/cover2.jpg" alt="Second">
-            </div>
-            <div class="covslide">
-              <img src="images/cover3.jpg" alt="Third">
-            </div>
-            <div class="covslide">
-              <img src="images/cover4.jpg" alt="Fourth">
-            </div>
-            <div class="covslide">
-              <img src="images/cover5.jpg" alt="Fifth">
-            </div>
+
+    <section class="contact_section layout_padding">
+    <div class="bg-img1">
+      <img src="images/bg-img-1.png" alt="">
+    </div>
+    <div class="bg-img2">
+      <img src="images/bg-img-2.png" alt="">
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Payment Receipt
+        </h2>
+        <p>
+          Proof of Your Payment
+        </p>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form action="" method="post">
+              <div class="contact_form-container">
+                <table class="tabl">
+					<tr class="tabl">
+						<td class="tabl"> Customer Name </td>
+						<td class="tabl"> Ramesh Patel <br> <br> </td>
+					</tr>
+					<tr class="tabl">
+						<td class="tabl">  Customer Email </td>
+						<td class="tabl"> ramesh@gamil.com <br> <br> </td>
+					</tr>
+					<tr class="tabl">
+						<td class="tabl"> Customer Mobile Number </td>
+						<td class="tabl"> 9874652130 <br> <br> </td>
+					</tr>
+					<tr class="tabl">
+						<td class="tabl">  Order </td>
+						<td class="tabl"> Album <br> <br> </td>
+					</tr>
+					<tr class="tabl">
+						<td class="tabl">  Payment Date </td>
+						<td class="tabl"> 15 / 05/ 2020 <br> <br> </td>
+					</tr>
+				</table>
+				<button> Download </button>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="covnavigation">
-          <label for="r1" class="covbar"> 1 </label>
-          <label for="r2" class="covbar"> 2 </label>
-          <label for="r3" class="covbar"> 3 </label>
-          <label for="r4" class="covbar"> 4 </label>
-          <label for="r5" class="covbar"> 5 </label>
-        </div>
-        <div class=""> 
-          <form action="cart.html" method="post">
-            <button type="submit"> Add to Cart </button>
-          </form> 
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  
+
+  <!-- Backend -->
+  <?php
+    $user=$_POST['user'];
+    $pass=$_POST['pass'];
+  
+  ?>
 
   <!-- info section -->
   <section class="info_section ">
@@ -165,7 +173,7 @@
               <a href="https://www.facebook.com/abhayshahnvs" target="_blank">
                 <img src="images/fb.png" alt="FaceBook">
               </a>
-
+              
             </div>
         </div>
       </div>
@@ -178,7 +186,8 @@
   <section class="container-fluid footer_section">
     <div class="container">
       <p>
-        &copy; 2019 All Rights Reserved By Kalash Shah
+        &copy; 2019 All Rights Reserved By
+        <a href="https://html.design/">Kalash Shah</a>
       </p>
     </div>
   </section>

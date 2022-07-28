@@ -14,13 +14,13 @@
   <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
-  <meta name="author" content="Kalash" />
+  <meta name="author" content="" />
 
-  <title> Shah Abhay PhotoGraphy </title>
+  <title> Shah Abhay PhotoGraphy | Login </title>
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="sub_page">
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -46,7 +46,7 @@
                   Abhay Shah
                 </span>
               </a>
-            </a>
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -85,7 +85,6 @@
                   </form>
                 </div>
 
-
               </div>
             </nav>
           </div>
@@ -93,8 +92,11 @@
       </div>
     </header>
     <!-- end header section -->
+  </div>
 
-    <section class="contact_section layout_padding">
+  <!-- Login section -->
+
+  <section class="contact_section layout_padding">
       <div class="bg-img1">
         <img src="images/bg-img-1.png" alt="">
       </div>
@@ -106,6 +108,9 @@
           <h2>
             User's Dashboard
           </h2>
+          <p>
+            The Engine to run all the Operations
+          </p>
         </div>
         <div class="">
           <div class="row">
@@ -117,15 +122,94 @@
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/1wKaSofErXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                   <div>
                     <h5> 
-                      Wanna Capture Memories of Your Event, Click <a href="booking.html"> Here </a> <br>
-                      Wanna Checkout Selected Photos, Click <a href="selectedpics.htmlß"> Here </a> <br>
-                      To Pay the Bill, Click <a href="payment.html"> Here </a> <br>
-                      To Provide Review, Click <a href="review.html"> Here </a> <br>
-                      To View All Media, Click <a href="folders.html"> Here </a> <br>
-                      To Order Customized Products, Click <a href="custome.html"> Here </a> <br>
-                      
-                    </h5>
+                      <table>
+                        <tr> 
+                          <td>
+                            Wanna Capture Memories of Your Event
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          <td> 
+                            Click <a href="booking.html"> Here </a> <br>
+                          </td>
+                        </tr>
 
+                        <tr> 
+                          <td>
+                            Wanna Checkout Selected Photos,
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          <td> 
+                            Click <a href="selectedpics.htmlß"> Here </a> <br>
+                          </td>
+                        </tr>
+
+                        <tr> 
+                          <td>
+                            To Pay the Bill,
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          <td> 
+                            Click <a href="payment.html"> Here </a> <br>
+                          </td>
+                        </tr>
+
+                        <tr> 
+                          <td>
+                            To Provide Review,
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          <td> 
+                            Click <a href="review.html"> Here </a> <br>
+                          </td>
+                        </tr>
+
+                        <tr> 
+                          <td>
+                            To View All Media,
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          <td> 
+                            Click <a href="folders.html"> Here </a> <br>
+                          </td>
+                        </tr>
+
+                        <tr> 
+                          <td>
+                            To Order Customized Products,
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          <td> 
+                            Click <a href="custome.html"> Here </a> <br>
+                          </td>
+                        </tr>
+
+                        <tr> 
+                          <td>
+                            To Pay the Bill,
+                          </td>
+                          <td style="padding: 25px;">
+                            =>
+                          </td>
+                          </td>
+                          <td> 
+                            Click <a href="payment.html"> Here </a> <br>
+                          </td>
+
+                        </tr>
+                      </table>
+                    </h5>
                   </div>
               </div>
             </div>
@@ -135,8 +219,13 @@
     </section>
     </div>
     
-              
-    
+
+  <!-- Backend -->
+  <?php
+    $user=$_POST['user'];
+    $pass=$_POST['pass'];
+  
+  ?>
 
   <!-- info section -->
   <section class="info_section ">
@@ -158,6 +247,7 @@
               <a href="https://www.facebook.com/abhayshahnvs" target="_blank">
                 <img src="images/fb.png" alt="FaceBook">
               </a>
+              
             </div>
         </div>
       </div>
@@ -170,11 +260,13 @@
   <section class="container-fluid footer_section">
     <div class="container">
       <p>
-        &copy; 2019 All Rights Reserved By Kalash Shah
+        &copy; 2019 All Rights Reserved By
+        <a href="https://html.design/">Kalash Shah</a>
       </p>
     </div>
   </section>
   <!-- footer section -->
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 

@@ -16,11 +16,11 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title> Shah Abhay PhotoGraphy </title>
+  <title> Shah Abhay PhotoGraphy | Login </title>
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="sub_page">
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -46,7 +46,7 @@
                   Abhay Shah
                 </span>
               </a>
-            </a>
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,16 +86,59 @@
                 </div>
 
 
-
               </div>
             </nav>
           </div>
         </div>
       </div>
     </header>
+  </div>
     <!-- end header section -->
 
-    
+
+    <section class="contact_section layout_padding">
+    <div class="bg-img1">
+      <img src="images/bg-img-1.png" alt="">
+    </div>
+    <div class="bg-img2">
+      <img src="images/bg-img-2.png" alt="">
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Media Folders
+        </h2>
+        <p>
+          A Place where All Your Photos and Videos Reside In
+        </p>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form action="receipt.html" method="post">
+              <div class="folders">
+                <button type="submit"> Haldi </button>
+                <button type="submit"> Ring Ceremony </button>
+                <button type="submit"> Var Mala</button>
+                <button type="submit"> Phera </button>
+                <button type="submit"> Vidai </button>
+                <button type="submit"> Reception </button>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Backend -->
+  <?php
+    $user=$_POST['user'];
+    $pass=$_POST['pass'];
+  
+  ?>
 
   <!-- info section -->
   <section class="info_section ">
@@ -117,6 +160,7 @@
               <a href="https://www.facebook.com/abhayshahnvs" target="_blank">
                 <img src="images/fb.png" alt="FaceBook">
               </a>
+              
             </div>
         </div>
       </div>
@@ -129,11 +173,13 @@
   <section class="container-fluid footer_section">
     <div class="container">
       <p>
-        &copy; 2019 All Rights Reserved By Kalash Shah
+        &copy; 2019 All Rights Reserved By
+        <a href="https://html.design/">Kalash Shah</a>
       </p>
     </div>
   </section>
   <!-- footer section -->
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
