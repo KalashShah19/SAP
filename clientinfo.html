@@ -16,7 +16,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title> Shah Abhay PhotoGraphy </title>
+  <title> Shah Abhay PhotoGraphy | Product Info </title>
 
 
   <!-- bootstrap core css -->
@@ -40,11 +40,7 @@
           <div class="col-lg-11 offset-lg-1">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
               <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="">
-                <span>
-                  Abhay Shah
-                </span>
-              </a>
+                <img src="images/logo.jpg" alt="">
             </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,31 +51,35 @@
                 <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                   <ul class="navbar-nav  ">
                     <li class="nav-item">
-                      <a class="nav-link" href="userhome.html"> Dash Board <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="clienthome.html"> Dash Board <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="booking.html"> Shoot Booking <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="clientbooking.html"> Shoot Booking <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Selectedpics.html"> Selected Pics <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="covers.html"> Album Covers <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="clientselectedpics.html"> Selected Pics <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="preview.html"> Album Preview </a>
+                      <a class="nav-link" href="clientpayment.html"> Bill Payment <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="folders.html"> Media Folders  </a>
+                      <a class="nav-link" href="clientreview.html"> FeedBack / Review </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="custome.html"> Customized Products </a>
+                      <a class="nav-link" href="clientfolders.html"> Media Folders  </a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="clientproducts.html"> Customized Products </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientorders.html"> My Orders </a>
+                      </li>
                     <li class="nav-item">
                       <a class="nav-link" href="index.html"> Log Out </a>
                     </li>
                   </ul>
                 </div>
+
 
 
               </div>
@@ -100,23 +100,59 @@
       <div class="container">
         <div class="heading_container">
           <h2>
-            Highlights Short Film
+            Product Information
           </h2>
           <p>
-            Get a Glimpse of Your Wedding
+            Know what It Is and Select Your Style
           </p>
         </div>
         <div class="">
-          <div class="row">
-            <div class="col-md-8 mx-auto">
-              <form action="cart.html" method="post">
+            <div class="row">
+              <div class="col-md-8 mx-auto">
                 <div class="contact_form-container">
-                  <iframe width="750" height="400" src="https://www.youtube.com/embed/1wKaSofErXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <button type="submit"> Add to Cart</button>
-                </div>
-              </form>
+                  <div class="row">
+                    <div class="column">
+                      <div class="img-box b-1">
+                      <form action="clientcart.html" method="post">
+                          <img src="products/keychain.jpg" alt="Cup">
+                        </div>
+                      </div>
+                    
+                      <div class="column">
+                        <div class="img-box b-1">
+                           <label for="size"> Size : </label>
+
+                          <select id="size">
+                            <option value="Small"> Small </option>
+                            <option value="Medium"> Medium </option>
+                            <option value="Large"> Large </option>
+                          </select>
+                          
+                          <br>
+                          <label for="color"> Color : </label>
+                          <select id="color">
+                            <option value="blue"> Blue </option>
+                            <option value="Black"> Black </option>
+                            <option value="Red"> Red </option>
+                            <option value="White"> White </option>
+                            <option value="Grey"> Grey </option>
+                          </select> 
+                            
+                          <br>
+                          <p> Price : 300 /- Rs <br> </p>
+                        </div>
+                      </div>
+                    </div>
+                <div class=" d-flex justify-content-center ">
+                    <button type="submit">
+                    Add to Cart
+                </button> 
             </div>
-          </div>
+        </div>
+    </div>
+                  </form>
+                </div>
+              </div>
         </div>
       </div>
     </section>

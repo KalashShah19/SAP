@@ -1,6 +1,22 @@
-photo selection
+#client
+photo selection *
 review/feedback
 user dashboard
 album slideshow
 user all meadia folders
 customized products
+*orders (cancel)
+
+#admin
+bookings mamangement /
+orders /
+apply leave /
+leave requests /
+
+#owner
+client mamangement /
+staff leave mamangement
+booking mamangement 
+product orders 
+records - leave, orders, booking 
+report 

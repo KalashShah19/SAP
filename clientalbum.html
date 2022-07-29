@@ -16,7 +16,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title> Shah Abhay PhotoGraphy | Login </title>
+  <title> Shah Abhay PhotoGraphy | Album </title>
 
 
   <!-- bootstrap core css -->
@@ -41,10 +41,7 @@
           <div class="col-lg-11 offset-lg-1">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
               <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="">
-                <span>
-                  Abhay Shah
-                </span>
+                <img src="images/logo.jpg" alt="">
               </a>
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -70,7 +67,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="review.html"> FeedBack / Review </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="folders.html"> Media Folders  </a>
                     </li>
                     <li class="nav-item">
@@ -103,26 +100,35 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Media Folders
+          Album Info
         </h2>
         <p>
-          A Place where All Your Photos and Videos Reside In
+          Choose the Style of Album You want
         </p>
       </div>
       <div class="">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <form action="selectedpics.html" method="post">
-              <div class="folders">
-                <button type="submit"> Haldi </button>
-                <button type="submit"> Ring Ceremony </button>
-                <button type="submit"> Var Mala</button>
-                <button type="submit"> Phera </button>
-                <button type="submit"> Vidai </button>
-                <button type="submit"> Reception </button>
+              <div class="contact_form-container">
+                  <form action="clientcovers.html" method="post"> 
+                    <label for="size"> Size </label>
+                    <select> 
+                        <option> Select </option>  
+                        <option value="8×8"> 8×8 </option>
+                        <option value="10x10"> 10x10 </option>
+                        <option value="12x12"> 12x12 </option>
+                        <option value="6x8"> 6x8 </option>
+                        <option value="8×11"> 8×11 </option>
+                        <option value="11×14"> 11×14 </option>
+                        <option value="12×16"> 12×16 </option>
+                        <option value="11x8"> 11x8 </option>
+                        <option value="14x11"> 14x11 </option>
+                        <option value="16x12"> 16x12 </option>
+                    </select>
+                    <br>
+                    <button type="submit"> Covers </button>
+                </form>
               </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>

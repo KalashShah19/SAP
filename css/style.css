@@ -163,7 +163,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 30px;
+  width: 100px;
   margin-right: 5px;
 }
 
@@ -537,7 +537,7 @@ a:focus {
 
 
 .portfolio_section .portfolio_container .img-box .btn-box .btn-1 {
-  background-image: url(../images/link.png);
+  background-image: url(../images/star.jpg);
 }
 
 .portfolio_section .portfolio_container .img-box .info-box .info {
