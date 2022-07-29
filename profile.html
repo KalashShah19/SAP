@@ -16,7 +16,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title> Shah Abhay PhotoGraphy | Login </title>
+  <title> Shah Abhay PhotoGraphy | Registration </title>
 
 
   <!-- bootstrap core css -->
@@ -64,7 +64,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="selectedpics.html"> Selected Pics <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                       <a class="nav-link" href="payment.html"> Bill Payment <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -81,19 +81,19 @@
                     </li>
                   </ul>
                 </div>
-
-
+                
               </div>
             </nav>
           </div>
         </div>
       </div>
     </header>
-  </div>
     <!-- end header section -->
+  </div>
 
+  <!-- Registration section -->
 
-    <section class="contact_section layout_padding">
+  <section class="contact_section layout_padding">
     <div class="bg-img1">
       <img src="images/bg-img-1.png" alt="">
     </div>
@@ -103,46 +103,79 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Product Info
+          Profile
         </h2>
         <p>
-          Everything You Need To Know about the Product
+          Look at Your Reflection
         </p>
       </div>
       <div class="">
         <div class="row">
           <div class="col-md-8 mx-auto">
+            <form action="profile.html" method="post">
               <div class="contact_form-container">
-                  <form action="covers.html" method="post"> 
-                    <label for="size"> Size </label>
-                    <select> 
-                        <option> Select </option>  
-                        <option value="8×8"> 8×8 </option>
-                        <option value="10x10"> 10x10 </option>
-                        <option value="12x12"> 12x12 </option>
-                        <option value="6x8"> 6x8 </option>
-                        <option value="8×11"> 8×11 </option>
-                        <option value="11×14"> 11×14 </option>
-                        <option value="12×16"> 12×16 </option>
-                        <option value="11x8"> 11x8 </option>
-                        <option value="14x11"> 14x11 </option>
-                        <option value="16x12"> 16x12 </option>
-                    </select>
-                    <br>
-                    <button type="submit"> Covers </button>
-                </form>
+                <div>
+                  <p> Profile Picture : </p>
+                  <img src="images/kalash.jpg" width="100px"> <br> <br> <br>
+                  <div>
+                    <label> First Name : </label>
+                    <input type="text" name="fname" value="Kalash">
+                  </div>
+                  <div>
+                    <label> Middle Name : </label>
+                    <input type="text" name="mname" value="Abhay">
+                  </div>
+                  <div>
+                    <label> Last Name : </label>
+                    <input type="text" name="lname" value="Shah">
+                  </div>
+                  <div>
+                    <label> User Name : </label>
+                    <input type="text" name="user" value="kalash19">
+                  </div>
+                  <div>
+                    <label> Password : </label>
+                    <input type="text" name="pass" value="1234">
+                  </div>
+                  <div>
+                    <label> Phone Number : </label>
+                    <input type="text" name="num" value="9874456321">
+                  </div>
+                  <div>
+                    <label> Email : </label>
+                    <input type="email"  name="email" value="kalash@gmail.com">
+                  </div>
+                  <div>
+                    <label> Address : </label>
+                    <input type="text"  name="add" value="101, B Wing, Gokuldham Society, Powder Gali, Mumbai">
+                  </div>
+                  <div class=" d-flex justify-content-center ">
+                    <button type="submit">
+                      Save
+                    </button>
+                  </div>
+                </div>
               </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
+  <!-- end contact section -->
 
   <!-- Backend -->
+
   <?php
+    $fname=$_POST['fname'];
+    $mname=$_POST['mname'];
+    $lname=$_POST['lname'];
     $user=$_POST['user'];
     $pass=$_POST['pass'];
+    $cpass=$_POST['cpass'];
+    $num=$_POST['num'];
+    $email=$_POST['email'];
+    $add=$_POST['add'];
   
   ?>
 
@@ -166,7 +199,6 @@
               <a href="https://www.facebook.com/abhayshahnvs" target="_blank">
                 <img src="images/fb.png" alt="FaceBook">
               </a>
-              
             </div>
         </div>
       </div>

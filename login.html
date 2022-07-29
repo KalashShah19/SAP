@@ -77,9 +77,6 @@
                       <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                   </ul>
-                  <form class="form-inline">
-                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                  </form>
                 </div>
               </div>
             </nav>
@@ -140,7 +137,22 @@
   <?php
     $user=$_POST['user'];
     $pass=$_POST['pass'];
-  
+    if(isset($_POST['submit']))
+            {
+                $email=$_POST['email'];
+                $url=$_POST['url'];
+                #echo "$email\n";
+                $mailpattern="/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix";
+                $urlpattern="/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i";
+                if(preg_match($mailpattern,$email)==1)
+                  echo "<sript> alert("Valid Email."); </sript> <br> <br>";
+                else
+                  echo "<sript> alert("Invalid Email !"); </sript> <br> <br>";
+                if(preg_match($urlpattern,$url)==1)
+                  echo "<sript> alert("Valid URl."); </sript> <br> <br>";
+                else
+                  echo "<sript> alert("Invalid URl !"); </sript> <br> <br>";
+            }    
   ?>
 
   <!-- info section -->
