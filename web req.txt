@@ -14,9 +14,13 @@ apply leave /
 leave requests /
 
 #owner
-client mamangement /
+client mamangement - media /
 staff leave mamangement
+product mamangement 
 booking mamangement 
 product orders 
 records - leave, orders, booking 
 report 
+
+#SRS
+city table
