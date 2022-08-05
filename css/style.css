@@ -267,6 +267,23 @@ a:focus {
   margin-right: 5px;
 }
 
+.btn-action {
+  height: 50px;
+  width: auto;
+  display: inline-block;
+  padding: 10px;
+  background-color: #0fcfdc;
+  color: #ffffff;
+  border-radius: 15px;
+  margin: 5px;
+  font-size: large;
+}
+
+.btn-action:hover {
+  background-color: cyan;
+}
+
+
 .slider_section .detail_box .info-box .info {
   display: inline-block;
   padding: 7px 0px;
