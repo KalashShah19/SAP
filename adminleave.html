@@ -3,7 +3,9 @@
     <script>
         var path = window.location.pathname;
         var page = path.split("/").pop();
-        
+        function apply() {
+          alert("Applied for Leave.");
+        }
     </script>
 <head>
   <!-- Basic -->
@@ -113,9 +115,7 @@
                   <input type="text" name="personalized event" id="personalized event"  class="book"> <br> <br>
                   <p style="font-size: small;"> *Remember That there are only Few Paid Leaves, Rejected leave won't Count. </p>
                   <div class=" d-flex justify-content-center ">
-                    <button type="submit">
-                      Apply
-                    </button>
+                    <a href="adminleave.html" onclick="apply()" class="btn-action"> Apply </a>
                 </div>
               </div>
             </div>

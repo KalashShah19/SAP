@@ -3,6 +3,10 @@
   <script>
     var path = window.location.pathname;
     var page = path.split("/").pop();
+    function forgot()
+    {
+      alert("Link Has been Sent to Your Email.");
+    }
     
 </script>
 <head>
@@ -116,9 +120,15 @@
                     <input type="password">
                   </div>
                   <div class=" d-flex justify-content-center ">
-                     <button style="border: 2px solid white;" formaction="clienthome.html" type="submit">
+                     <a href="clienthome.html" class="btn-action"> Client Login </a>
+                     <a href="adminbooking.html" class="btn-action"> Staff Login </a>
+                     <a href="ownerclients.html" class="btn-action"> Admin Login </a>
+                     <a href="login.html" onclick="forgot()" class="btn-action"> Forgot Password </a>
+                      
+                    <!-- 
+                    <button  style="border: 2px solid white;" formaction="adminbooking.html" type="submit">
                       Client Login
-                    </button> 
+                    </button>
                     <button  style="border: 2px solid white;" formaction="adminbooking.html" type="submit">
                       Staff Login
                     </button>
@@ -127,7 +137,7 @@
                     </button>
                     <button  style="border: 2px solid white;" formaction="login.html" type="submit" name="forgot">
                       Forgot Password
-                    </button>
+                    </button> -->
                     
                 </div>
               </div>
@@ -155,11 +165,6 @@
                 }
             }    
   ?> -->
-
-  <?php
-    if(isset($_POST['forgot']))
-      echo '<script>alert("Link Has been Sent to Your Email.")</script>';
-  ?>
 
   <!-- info section -->
   <section class="info_section ">
