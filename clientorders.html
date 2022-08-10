@@ -3,7 +3,10 @@
   <script>
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    
+
+    function canceled() {
+      alert("Order has been Cancelled.");
+    }    
 </script>
 <head>
   <!-- Basic -->
@@ -115,17 +118,13 @@
                     <p> Order : Frame, Cup <p> 
                     <p> Amount : 500 </p>
                     <p> Status : Delivering </p>
-                    <form action="clientcart.html">
-                      <button type="submit"> Cancel </button>
-                    </form>
+                    <a href="clientorders.html" onclick="canceled()" class="btn-action"> Cancel </a>
                     <hr> <br>
   
                     <p> Order : Phone Cover <p> 
                     <p> Amount : 300 </p>
                     <p> Status : Delivering </p>
-                    <form action="clientcart.html">
-                      <button type="submit"> Cancel </button>
-                    </form>
+                    <a href="clientorders.html" onclick="canceled()" class="btn-action"> Cancel </a>
                     <hr> <br>
   
                     <p> Order : Photo Frame <p> 
@@ -150,12 +149,12 @@
         </section>
     
 
-  <!-- Backend -->
+  <!-- Backend 
   <?php
     $user=$_POST['user'];
     $pass=$_POST['pass'];
   
-  ?>
+  ?> -->
 
   <!-- info section -->
   <section class="info_section ">

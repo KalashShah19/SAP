@@ -3,7 +3,12 @@
   <script>
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    
+    function updatephoto() {
+      alert("Profile Photo has been Updated.");
+    }
+    function saved() {
+      alert("Changes in Profile have been Saved.");
+    }
 </script>
 <head>
   <!-- Basic -->
@@ -149,13 +154,9 @@
                     <input type="text"  name="add" value="101, B Wing, Gokuldham Society, Powder Gali, Mumbai">
                   </div>
                   <div class=" d-flex justify-content-center ">
-                    <button style="border: 2px solid white;" type="submit">
-                      Upload Profile Photo
-                    </button>
-                    <button style="border: 2px solid white;" type="submit">
-                      Save
-                    </button>
-                  </div>
+                    <a href="clientprofile.html" onclick="updatephoto()" class="btn-action"> Update Profile Photo </a>
+                    <a href="clientprofile.html" onclick="saved()" class="btn-action"> Save </a>
+                    </div>
                 </div>
               </div>
             </form>
@@ -166,7 +167,7 @@
   </section>
   <!-- end contact section -->
 
-  <!-- Backend -->
+  <!-- Backend
 
   <?php
     $fname=$_POST['fname'];
@@ -179,7 +180,7 @@
     $email=$_POST['email'];
     $add=$_POST['add'];
   
-  ?>
+  ?> -->
 
   <!-- info section -->
   <section class="info_section ">

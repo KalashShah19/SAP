@@ -3,7 +3,10 @@
   <script>
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    alert("Your Payment was Received, Thank You.");
+    
+    function downloaded() {
+      alert("Your Payment Receipt will be Downloaded Soon...");
+    }
 </script>
 <head>
   <!-- Basic -->
@@ -139,8 +142,8 @@
 						<td class="tabl"> UPI <br> <br> </td>
 					</tr>
 				</table>
-				<button type="submit"> Download </button>
-        <button type="submit"> Home </button>
+				  <a href="clientreceipt.html" onclick="downloaded()" class="btn-action"> Download </a>
+          <a href="clienthome.html" class="btn-action"> Home </a>
               </div>
             </form>
           </div>
@@ -150,12 +153,12 @@
   </section>
   
 
-  <!-- Backend -->
+  <!-- Backend 
   <?php
     $user=$_POST['user'];
     $pass=$_POST['pass'];
   
-  ?>
+  ?> -->
 
   <!-- info section -->
   <section class="info_section ">

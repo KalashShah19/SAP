@@ -3,7 +3,20 @@
     <script>
         var path = window.location.pathname;
         var page = path.split("/").pop();
-        
+
+        function editted()
+        {
+          alert("Product Information has been Successfully Editted.");
+        }
+
+        function deleted()
+        {
+          alert("Product has been Successfully Deleted.");
+        }
+        function image()
+        {
+          alert("Product photo has been Successfully Updated.");
+        }
     </script>
 <head>
   <!-- Basic -->
@@ -114,41 +127,45 @@
                   <p> Size : 6x12,11x8,8x11,11x16 </p>   
                   <p> Bg Color : Black, White, Red, Blue </p> 
                   <p> Covers : Simple, Fancy, Retro </p> 
-                  <button formaction="ownermanageproduct.html"> Edit </button>
-                  <button formaction="ownermanageproduct.html"> Delete </button>
-                  <button formaction="ownermanageproduct.html"> Image </button>
+                  <a href="ownermanageproduct.html" onclick="editted()" class="btn-action"> Edit </a>
+                  <a href="ownermanageproduct.html" onclick="deleted()" class="btn-action"> Delete </a>
+                  <a href="ownermanageproduct.html" onclick="image()" class="btn-action"> Image </a>
                   
                   <hr> <br>
 
                   <p> Name : Short Film <p> 
                   <p> Price : Relative <p>  
                   <p> Duration : 3,4,5 </p>   
-                  <button formaction="ownermanageproduct.html"> Edit </button>
-                  <button formaction="ownermanageproduct.html"> Delete </button>
-                  <button formaction="ownermanageproduct.html"> Image </button>
+                  <a href="ownermanageproduct.html" onclick="editted()" class="btn-action"> Edit </a>
+                  <a href="ownermanageproduct.html" onclick="deleted()" class="btn-action"> Delete </a>
+                  <a href="ownermanageproduct.html" onclick="image()" class="btn-action"> Image </a>
                   
                   <hr> <br>
                   
                   <p> Name : Stickers <p> 
                   <p> Price : 30,40,50 <p>  
                   <p> Size : Small, Medium, Large </p>   
-                  <button formaction="ownermanageproduct.html"> Edit </button>
-                  <button formaction="ownermanageproduct.html"> Delete </button>
-                  <button formaction="ownermanageproduct.html"> Image </button>
+                  <a href="ownermanageproduct.html" onclick="editted()" class="btn-action"> Edit </a>
+                  <a href="ownermanageproduct.html" onclick="deleted()" class="btn-action"> Delete </a>
+                  <a href="ownermanageproduct.html" onclick="image()" class="btn-action"> Image </a>
+                  
                   <hr> <br>
                   
-                    <p> Name : Frame <p> 
-                    <p> Price : 300,400,500 <p>  
-                    <p> Size : Small, Medium, Large </p>   
-                    <button formaction="ownermanageproduct.html"> Edit </button>
-                    <button formaction="ownermanageproduct.html"> Delete </button>
-                    <button formaction="ownermanageproduct.html"> Image </button>
-                    <hr> <br> <br>
-                    <button style="margin-left: 44%;" formaction="ownermanageproduct.html"> New </button>
-                    </form>
-                    </div>
-                    </div>
-                    </div>
+                  <p> Name : Frame <p> 
+                  <p> Price : 300,400,500 <p>  
+                  <p> Size : Small, Medium, Large </p>   
+                  <a href="ownermanageproduct.html" onclick="editted()" class="btn-action"> Edit </a>
+                  <a href="ownermanageproduct.html" onclick="deleted()" class="btn-action"> Delete </a>
+                  <a href="ownermanageproduct.html" onclick="image()" class="btn-action"> Image </a>
+
+                  <hr> <br> <br>
+                  <div class="folders">
+                    <a href="ownermanageproduct.html" onclick="newpro()" class="btn-action"> New </a>
+                  </div>
+                  </form>
+                  </div>
+                  </div>
+                  </div>
                 </div>
             </div>
         </section>

@@ -268,7 +268,7 @@ a:focus {
 }
 
 .btn-action {
-  height: 50px;
+  height: auto;
   width: auto;
   display: inline-block;
   padding: 10px;
@@ -282,6 +282,8 @@ a:focus {
 .btn-action:hover {
   background-color: cyan;
 }
+
+
 
 
 .slider_section .detail_box .info-box .info {
@@ -1118,6 +1120,11 @@ input[name="r"]{
   margin: 15px 0;
   background-color: transparent;
 }
+
+.folders {
+  text-align: center;
+}
+
 
 .folders button {
   background-color: rgb(0, 217, 255); /* Green background */

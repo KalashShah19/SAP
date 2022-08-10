@@ -4,6 +4,9 @@
     var path = window.location.pathname;
     var page = path.split("/").pop();
     
+    function paid() {
+      alert("Your Payment was Received, Thank You.");
+    }
 </script>
 <head>
   <!-- Basic -->
@@ -113,13 +116,13 @@
             <div class="col-md-8 mx-auto">
                 <form action="clientreceipt.html" method="post">
                   <br><br>
-                  <p style="text-align: center; color: green"> Total Amount = 12550 </p>
-                  <label for="method"> Select Method :- </label>  
+                  <p style="text-align: center; color: green"> Total Amount = 12550 </p> <br>
                   <div class="folders">
-                      <button type="submit"> UPI </button>
-                      <button type="submit"> DEBIT CARD </button>
-                      <button type="submit"> CREDIT CARD </button>
-                    </div>
+                  <label for="method"> Select Method :- </label>  <br>
+                    <a href="clientreceipt.html" onclick="paid()" class="btn-action"> UPI </a> <br>
+                    <a href="clientreceipt.html" onclick="paid()" class="btn-action"> Credit Card </a> <br>
+                    <a href="clientreceipt.html" onclick="paid()" class="btn-action"> Debit Card </a> <br>
+                  </div>
                   </div>
                 </form>
             </div>
@@ -129,12 +132,12 @@
   </section>
   
 
-  <!-- Backend -->
+  <!-- Backend 
   <?php
     $user=$_POST['user'];
     $pass=$_POST['pass'];
   
-  ?>
+  ?> -->
 
   <!-- info section -->
   <section class="info_section ">

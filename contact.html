@@ -3,7 +3,10 @@
   <script>
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    
+
+    function submitted() {
+      alert("Your Message has been Submitted.");
+    }
 </script>
 <head>
   <!-- Basic -->
@@ -128,11 +131,9 @@
                     <input type="text" class="message_input" name="msg">
                   </div>
                   <div class=" d-flex justify-content-center ">
-                    <button type="submit">
-                      Send
-                    </button>
+                    <a href="contact.html" onclick="submitted()" class="btn-action"> Submit </a>
 
-                    <!-- Backend -->
+                    <!-- Backend 
                     <?php
                         $fname=$_POST['fname'];
                         $mname=$_POST['mname'];
@@ -140,7 +141,7 @@
                         $email=$_POST['email'];
                         $msg=$_POST['msg'];
                         
-                    ?>
+                    ?> -->
 
                   </div>
                     <span> <br> <br> <h4>

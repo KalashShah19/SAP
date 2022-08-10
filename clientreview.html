@@ -4,6 +4,9 @@
     var path = window.location.pathname;
     var page = path.split("/").pop();
     
+    function submitted() {
+      alert("Thank You for Your Time, Your Review has been recorded and it matters to us.");
+    }
 </script>
 <head>
   <!-- Basic -->
@@ -123,9 +126,7 @@
                     <input type="text" name="exp">
                   </div>
                   <div class=" d-flex justify-content-center ">
-                    <button type="submit">
-                      Submit
-                    </button>
+                    <a href="clientreview.html" onclick="submitted()" class="btn-action"> Submit </a>
                   </div>
                 </div>
               </div>
@@ -137,12 +138,12 @@
   </section>
 
 
-  <!-- Backend -->
+  <!-- Backend
   <?php
     $sub=$_POST['sub'];
     $exp=$_POST['exp'];
   
-  ?>  
+  ?>  -->
 
   <!-- info section -->
   <section class="info_section ">
