@@ -911,7 +911,7 @@ a:focus {
 }
 
 .footer_section a {
-  color: #ffffff;
+  color: cyan;
 }
 
 .row {
@@ -1151,4 +1151,9 @@ input[name="r"]{
     padding: 10px; 
     font-size: x-large;
     border: 2px solid white;
+}
+
+.kalash:hover {
+  color: blue;
+  text-decoration: underline;
 }
